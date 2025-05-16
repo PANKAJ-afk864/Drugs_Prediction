@@ -3,9 +3,13 @@
 
 # In[1]:
 
+import streamlit as st
+import pandas as pd
 
-from google.colab import files
-uploaded = files.upload()
+uploaded_file = st.file_uploader("Upload Excel file", type=["xlsx"])
+if uploaded_file is not None:
+    df = pd.read_excel(uploaded_file)
+
 
 
 # In[3]:
