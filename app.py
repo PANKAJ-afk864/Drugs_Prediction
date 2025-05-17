@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load model and vectorizer
-model = joblib.load("sentiment_model.pkl")
+model = joblib.load("model.pkl")
 vectorizer = joblib.load("vectorizer.pkl")
 
 # Streamlit UI
